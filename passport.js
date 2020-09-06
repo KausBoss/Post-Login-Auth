@@ -3,7 +3,6 @@ const User = require('./models/user');
 const LocalStrategy = require('passport-local').Strategy;
 
 passport.serializeUser((user, done) => {
-	// saved to session, req.session.passport.user = user_id
 	done(null, user.username);
 });
 
@@ -14,7 +13,6 @@ passport.deserializeUser((username, done) => {
 		if (err || !user) {
 			return done(err || new Error('No Such User Exist'));
 		}
-		// user -> user object attaches to the request as req.user
 		return done(null, user);
 	});
 });
