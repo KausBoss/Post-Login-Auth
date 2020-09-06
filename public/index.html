@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Pingter</title>
+  </head>
+  <body>
+
+    <section class="main-page">
+      <!-- left -->
+      <div class="left">
+        <div class="left-content">
+          <div id="pingu">
+              <img src="./pingu.png" width="230px" height="220">
+          </div>
+          <div>
+            <h3 class="left-content-heading">Pingter: Share & Connect</h3>
+          </div>
+        </div>
+      </div>
+      <!-- end of left -->
+
+
+      <!-- right -->
+      <div class="right">
+        <form class="right-content-form" method="POST" action="/login">
+          <input
+            type="text"
+            name="email"
+            class="user-info"
+            placeholder="Email"
+          />
+          <div>
+            <input 
+              type="password" 
+              name="password"
+              class="password" 
+              placeholder="Password" 
+            />
+            <label>Forgot Password?</label>
+          </div>
+          <button type="button" class="btn-top">Log in</button>
+        </form>
+        <div class="middle-content">
+          <i class="fab fa-linux"></i>
+          <h1>Find out you what others are up to</h1>
+          <h4>Join Pingter today</h4>
+          <button 
+            type="button" 
+            class="sign-up"
+            onclick="location.href = './signup.html'"
+          >Sign Up</button>
+          <button 
+            type="button" 
+            class="log-in"
+            onclick="location.href = './signup.html'"
+            >Log In</button>
+        </div>
+      </div>
+      <!-- end of right -->
+    </section>
+  </body>
+</html>

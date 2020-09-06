@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./signup.css" />
+  </head>
+  <body>
+    <section class="login-page">
+      <!-- login page nav -->
+      <nav class="login-page-nav">
+        <ul>
+          <li class="brand">
+            <a href="./index.html"><i class="fab fa-linux"></i> Home</a>
+          </li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+      <!-- end of login page nav -->
+      <!-- login -->
+      <div class="login">
+        <div class="login-content">
+          <h2>Signup to Pingter</h2>
+          <form class="login-form" method="POST" action="/register">
+            <input type="text" name="name" placeholder="Username" />
+            <input type="text" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <div>
+              <button type="button" class="login-form-btn">Sign Up</button>
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+        </div>
+        <footer class="login-footer">
+          <p>New to Pingter? <a href="#"><i class="fab fa-linux"></i>Sign up now</a></p>
+        </footer>
+      </div>
+      <!-- end of login -->
+    </section>
+  </body>
+</html>
