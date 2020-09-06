@@ -49,20 +49,4 @@ router.post(
 	})
 );
 
-router.get('/login/failure', (req, res) => {
-	console.log('Failed to Login');
-	res.redirect('/login');
-});
-
-router.get('/login/success', (req, res) => {
-	console.log('Login Successful');
-	res.redirect('/profile');
-});
-
-router.get('/logout', (req, res) => {
-	req.logOut();
-	console.log('Logged Out Succefully');
-	res.redirect('/login');
-});
-
 module.exports = router;

@@ -27,9 +27,9 @@ connect.then(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/public'));
+app.use('/', express.static(__dirname + '/public'));
 
-// setup passport with express-session-----------
+// setup passport with express-session-------------
 app.use(
 	express_session({
 		secret: process.env.express_session_secret,
@@ -39,13 +39,13 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
-//-------------------------------------------------
+//--------------------------------------------------
 
-var indexPage = require('./routes/index');
-var signupPage = require('./routes/signup');
+// var indexPage = require('./routes/index');
+// var signupPage = require('./routes/signup');
 
-app.use('/', indexPage);
-app.use('/signup', signupPage);
+// app.use('/', indexPage);
+// app.use('/signup', signupPage);
 
 // common error handler
 app.use(function(err, req, res, next) {
@@ -61,5 +61,5 @@ app.use(function(err, req, res, next) {
 let PORT = process.env.PORT || 3333;
 
 app.listen(PORT, () => {
-	console.log('Server started at http://localhost:', PORT);
+	console.log('Server started at http://localhost:' + PORT);
 });
